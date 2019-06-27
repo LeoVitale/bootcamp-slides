@@ -1,17 +1,17 @@
 export default [
   {
-    id: '3',
+    id: '6',
     contents: [
       {
         id: '1',
         type: 'Heading',
-        content: 'Proposta do Bootcamp',
+        content: 'Ferramentas',
         props: { textAlign: 'left', size: 2 }
       },
       {
         id: '2',
         type: 'Text',
-        content: 'Timebox (25 minutos)',
+        content: 'Timebox (20 minutos)',
         props: { textAlign: 'left' }
       }
     ]
