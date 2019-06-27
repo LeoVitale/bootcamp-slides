@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { Deck } from 'spectacle';
+import { Deck, Slide } from 'spectacle';
 import createTheme from 'spectacle/lib/themes/default';
-import Slide from '../Slide';
+import SlideContent from '../SlideContent';
 import { Container } from './styles';
 
 const theme = createTheme(
@@ -22,7 +22,9 @@ const Presentation = ({ slides }) => {
         {slides
           .filter(slide => slide.contents)
           .map(slide => (
-            <Slide key={slide.id} contents={slide.contents} />
+            <Slide key={slide.id} transition={['slide']}>
+              <SlideContent contents={slide.contents}/>
+            </Slide>
           ))}
       </Deck>
     </Container>
