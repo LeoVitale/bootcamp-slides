@@ -18,11 +18,11 @@ const theme = createTheme(
 const Presentation = ({ slides }) => {
   return (
     <Container>
-      <Deck theme={theme} transition={['slide']} transitionDuration={500}>
+      <Deck theme={theme} transition={['slide']} transitionDuration={500} controls={false}>
         {slides
           .filter(slide => slide.contents)
           .map(slide => (
-            <Slide key={slide.id} transition={['slide']}>
+            <Slide key={slide.id} {...slide.props} transition={['slide']}>
               <SlideContent contents={slide.contents}/>
             </Slide>
           ))}

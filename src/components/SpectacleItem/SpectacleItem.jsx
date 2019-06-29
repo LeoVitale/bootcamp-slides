@@ -7,10 +7,14 @@ import {
   Link,
   Notes,
   Quote,
-  Text
+  Text,
+  Appear
 } from 'spectacle';
 
-const SpectacleItem = ({ children, type, ...props }) => {
+const SpectacleItem = ({ children, type, animated, ...props }) => {
+  console.log('====================================');
+  console.log(props);
+  console.log('====================================');
   let Component;
   switch (type) {
     case 'Text':
@@ -40,6 +44,10 @@ const SpectacleItem = ({ children, type, ...props }) => {
     default:
       Component = Text;
       break;
+  }
+
+  if (animated) {
+    return <Appear><Component {...props}>{children}</Component></Appear>;
   }
 
   return <Component {...props}>{children}</Component>;

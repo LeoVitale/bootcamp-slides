@@ -14,7 +14,7 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-const slides = [...Apresentacao, ...Proposta, ...FrontEndDevs, ...Ferramentas, ...Regras];
+const slides = [...Apresentacao, ...Proposta, ...Regras, ...FrontEndDevs, ...Ferramentas];
 
 function App() {
   return (
