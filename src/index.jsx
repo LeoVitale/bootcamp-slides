@@ -4,7 +4,7 @@ import { normalize } from 'styled-normalize';
 import { createGlobalStyle } from 'styled-components';
 import Presentation from './components/Presentation';
 
-import { Apresentacao, Proposta, Regras, FrontEndDevs, Ferramentas } from './slides';
+import { Apresentacao, Proposta, Regras, FrontEndDevs, Ferramentas, HandsOn } from './slides';
 
 const GlobalStyle = createGlobalStyle`
   ${normalize}
@@ -14,7 +14,7 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-const slides = [...Apresentacao, ...Proposta, ...Regras, ...FrontEndDevs, ...Ferramentas];
+const slides = [...Apresentacao, ...Proposta, ...Regras, ...FrontEndDevs, ...Ferramentas, ...HandsOn];
 
 function App() {
   return (

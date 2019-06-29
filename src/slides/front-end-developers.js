@@ -61,35 +61,6 @@ export default [
   },
   {
     id: 'front-5',
-    contents: [
-      {
-        id: '1',
-        type: 'Heading',
-        content: 'Foco em Engenharia',
-        props: { textAlign: 'left', size: 3 }
-      }
-    ]
-  },
-  {
-    id: 'front-6',
-    props: {
-      bgImage: frontui,
-      bgDarken: 0.8
-    },
-    contents: [
-      {
-        id: '2',
-        type: 'Image',
-        content: '',
-        props: {
-          src: frontui,
-          margin: '-40px auto 0'
-        }
-      }
-    ]
-  },
-  {
-    id: 'front-7',
     props: {
       bgImage: 'https://media.giphy.com/media/xZqycRHIQkKNa/giphy.gif',
       bgDarken: 0.5
@@ -107,15 +78,48 @@ export default [
     ]
   },
   {
-    id: 'front-8',
+    id: 'front-6',
+    contents: [
+      {
+        id: '1',
+        type: 'Heading',
+        content: 'Foco em Engenharia',
+        props: { textAlign: 'left', size: 3 }
+      }
+    ]
+  },
+  {
+    id: 'front-7',
+    props: {
+      bgImage: 'https://techcrunch.com/wp-content/uploads/2015/04/matrix-operator.jpg',
+      bgDarken: 0.8
+    },
     contents: [
       {
         id: '2',
         type: 'Image',
         content: '',
         props: {
-          src: 'https://media.giphy.com/media/uOZg6EKGGZG5G/giphy.gif',
+          src: 'https://techcrunch.com/wp-content/uploads/2015/04/matrix-operator.jpg',
           margin: '50px auto'
+        }
+      }
+    ]
+  },
+  {
+    id: 'front-8',
+    props: {
+      bgImage: frontui,
+      bgDarken: 0.8
+    },
+    contents: [
+      {
+        id: '2',
+        type: 'Image',
+        content: '',
+        props: {
+          src: frontui,
+          margin: '-40px auto 0'
         }
       }
     ]
@@ -124,27 +128,11 @@ export default [
     id: 'front-9',
     contents: [
       {
-        id: '2',
-        type: 'Image',
-        content: '',
-        props: {
-          src: 'https://media.giphy.com/media/ql89wsWoAgTAI/giphy.gif',
-          margin: '50px auto'
-        }
-      }
-    ]
-  },
-  {
-    id: 'front-10',
-    contents: [
-      {
-        id: '2',
-        type: 'Image',
-        content: '',
-        props: {
-          src: 'https://media.giphy.com/media/EeKAJaMxmVLwc/giphy.gif',
-          margin: '50px auto'
-        }
+        id: '3',
+        type: 'Heading',
+        animated: true,
+        content: 'Dúvidas?',
+        props: { size: 2 }
       }
     ]
   }

@@ -11,7 +11,7 @@ export default [
         {
           id: '2',
           type: 'Text',
-          content: 'Timebox (15 minutos)',
+          content: 'Timebox (5 minutos)',
           props: { textAlign: 'left' }
         }
       ]
@@ -68,6 +68,18 @@ export default [
             type: 'Heading',
             content: 'Divirta-se :-)',
             props: { textAlign: 'left', size: 2, textColor: '#fff' }
+          }
+        ]
+      },
+      {
+        id: 'regras-5',
+        contents: [
+          {
+            id: '3',
+            type: 'Heading',
+            animated: true,
+            content: 'Dúvidas?',
+            props: { size: 2 }
           }
         ]
       }

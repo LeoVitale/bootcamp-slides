@@ -12,9 +12,6 @@ import {
 } from 'spectacle';
 
 const SpectacleItem = ({ children, type, animated, ...props }) => {
-  console.log('====================================');
-  console.log(props);
-  console.log('====================================');
   let Component;
   switch (type) {
     case 'Text':
