@@ -5,7 +5,9 @@ import SlideContent from '../SlideContent';
 import { Container } from './styles';
 
 const theme = createTheme(
-  {},
+  {
+    primary: '#B1CC15'
+  },
   {
     primary: {
       name: 'Cairo',
